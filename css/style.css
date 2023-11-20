@@ -63,6 +63,40 @@ ul li {
 
 }
 
+.horiz {
+    width: 360px;
+    height: 240px;
+    overflow: hidden;
+}
+
+.vert {
+    width: 360px;
+    height: 496px;
+    overflow: hidden;
+}
+
+.horiz img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vert img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 nav li:nth-child(1) {
     background-color: var(--c-teal);
 }
