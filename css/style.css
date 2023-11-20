@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,400&display=swap');
+
+:root {
+    --c-text: #e9eae4;
+    --c-bkg: #44312B;
+    --c-teal: #37A382;
+    --c-orange: #EA6E1B;
+    --c-green: #A5C052;
+    --c-yellow: #FFB932;
+
+    --ff-Header: 'Rubik', sans-serif;
+
+
+}
+
 body {
-    background-color: #44312B;
+    background-color: var(--c-bkg);
     margin: 0;
 }
 
@@ -17,4 +32,53 @@ body::before {
     background-size: 300px auto;
     opacity: 0.25;
     z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #1A1313;
+    align-items: center;
+
+
+}
+
+ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 120px;
+    border: 2px solid transparent;
+    border-color: var(--c-bkg);
+    font-family: var(--ff-Header);
+    font-weight: 800;
+    text-align: center;
+
+}
+
+nav li:nth-child(1) {
+    background-color: var(--c-teal);
+}
+
+nav li:nth-child(2) {
+    background-color: var(--c-orange);
+}
+
+nav li:nth-child(3) {
+    background-color: var(--c-green);
+}
+
+nav li:nth-child(4) {
+    background-color: var(--c-yellow);
+}
+
+ul li:hover {
+    border-color: var(--c-text);
 }
