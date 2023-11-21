@@ -63,16 +63,19 @@ ul li {
 
 }
 
+
 .horiz {
     width: 360px;
     height: 240px;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .vert {
     width: 360px;
     height: 496px;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .horiz img {
@@ -88,12 +91,12 @@ ul li {
 }
 
 main {
-    display: flex;
     padding: 1rem;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: ;
 }
 
 
@@ -115,4 +118,13 @@ nav li:nth-child(4) {
 
 ul li:hover {
     border-color: var(--c-text);
+}
+
+
+@media (max-width: 751px) {
+    .spoon {
+        width: 360px;
+        height: 496px;
+        overflow: hidden;
+    }
 }
