@@ -103,18 +103,15 @@ ul li:hover {
     margin: auto;
 }
 
+.horiz {
+    width: 100%;
+    height: auto;
+}
+
 
 .horiz {
     width: 352px;
     height: 240px;
-    overflow: hidden;
-    padding-bottom: .5rem;
-    padding-right: .5rem;
-}
-
-.vert {
-    width: 352px;
-    height: 496px;
     overflow: hidden;
     padding-bottom: .5rem;
     padding-right: .5rem;
@@ -125,6 +122,16 @@ ul li:hover {
     height: 100%;
     object-fit: cover;
 }
+
+
+.vert {
+    width: 352px;
+    height: 496px;
+    overflow: hidden;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
+}
+
 
 .vert img {
     width: 100%;
