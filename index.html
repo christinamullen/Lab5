@@ -18,51 +18,59 @@
             <li>Home</li>
             <li>Menu</li>
             <li>Order</li>
-            <li>Location</li>
+            <li>Map</li>
         </ul>
     </nav>
     <main>
-        <div class="horiz">
-            <img src="./imgs/greentacos.jpg" alt="two tacos on a green background">
+        <div class="gallery">
+            <div class="horiz">
+                <img srcset="./imgs/greentacos-480w.jpg 480w,
+                            ./imgs/greentacos-720w.jpg 720w,
+                            ./imgs/greentacos-1080w.jpg 1080w," sizes="(max-width: 480px) 480px,
+                    (max-width: 720px) 720px,
+                    1080px" alt="two tacos on a green background">
+            </div>
+            <div class="horiz">
+                <img src="./imgs/peppers.jpg" alt="two tacos on a green background">
+            </div>
+            <div class="horiz">
+                <img src="./imgs/salsas.jpg" alt="two tacos on a green background">
+            </div>
+            <div class="vert">
+                <img src="./imgs/redWallCactus.jpg" alt="two tacos on a green background">
+            </div>
+            <div class="vert">
+                <img src="./imgs/oneTaco.jpg" alt="two tacos on a green background">
+            </div>
+            <div class="vert">
+                <img src="./imgs/tacoSign.jpg" alt="two tacos on a green background">
+            </div>
+            <!-- ART DIRECTION -->
+            <div class="horiz spoon">
+                <picture>
+                    <!--large screens horizontal-->
+                    <source media="(min-width: 750px)" srcset="./imgs/4tacos.jpg">
+                    <!--small screens vertical orientation-->
+                    <source media="(max-width: 750px)" srcset="./imgs/6tacos.jpg">
+                    <!--default-->
+                    <img src="./imgs/6tacos.jpg" alt="two tacos on a green background">
+                </picture>
+            </div>
+            <div class="horiz">
+                <img src="./imgs/tableFood.jpg" alt="two tacos on a green background">
+            </div>
+            <div class="horiz spoon">
+                <picture>
+                    <!--large screens horizontal-->
+                    <source media="(min-width: 750px)" srcset="./imgs/spoon.jpg">
+                    <!--small screens vertical orientation-->
+                    <source media="(max-width: 750px)" srcset="./imgs/spoonVert.jpg">
+                    <!--default-->
+                    <img src="./imgs/spoonVert.jpg" alt="two tacos on a green background">
+                </picture>
+            </div>
         </div>
-        <div class="horiz">
-            <img src="./imgs/peppers.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="horiz">
-            <img src="./imgs/salsas.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="vert">
-            <img src="./imgs/redWallCactus.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="vert">
-            <img src="./imgs/oneTaco.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="vert">
-            <img src="./imgs/tacoSign.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="horiz spoon">
-            <picture>
-                <!--large screens horizontal-->
-                <source media="(min-width: 750px)" srcset="./imgs/4tacos.jpg">
-                <!--small screens vertical orientation-->
-                <source media="(max-width: 750px)" srcset="./imgs/6tacos.jpg">
-                <!--default-->
-                <img src="./imgs/6tacos.jpg" alt="two tacos on a green background">
-            </picture>
-        </div>
-        <div class="horiz">
-            <img src="./imgs/tableFood.jpg" alt="two tacos on a green background">
-        </div>
-        <div class="horiz spoon">
-            <picture>
-                <!--large screens horizontal-->
-                <source media="(min-width: 750px)" srcset="./imgs/spoon.jpg">
-                <!--small screens vertical orientation-->
-                <source media="(max-width: 750px)" srcset="./imgs/spoonVert.jpg">
-                <!--default-->
-                <img src="./imgs/spoonVert.jpg" alt="two tacos on a green background">
-            </picture>
-        </div>
+
 
     </main>
     <footer>
