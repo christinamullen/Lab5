@@ -11,9 +11,14 @@
     --ff-Header: 'Rubik', sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--c-bkg);
-    margin: 0;
+    margin: auto;
+    font-family: var(--ff-Header);
 }
 
 /*psuedo element placing the image on top of the brown background*/
@@ -36,8 +41,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
+/* scalable SVG (Noticeable quality difference for logo use case, over png*/
+header img {
+    width: 40%;
+    height: auto;
+    min-width: 320px;
+    max-width: 480px;
+}
+
 
 ul {
     display: flex;
@@ -45,9 +58,8 @@ ul {
     list-style: none;
     color: #1A1313;
     align-items: center;
-    margin: auto;
-
-
+    margin: 0;
+    padding: 0 0.5rem 1rem 0.5rem;
 }
 
 ul li {
@@ -62,8 +74,27 @@ ul li {
 
 }
 
+nav li:nth-child(1) {
+    background-color: var(--c-teal);
+}
+
+nav li:nth-child(2) {
+    background-color: var(--c-orange);
+}
+
+nav li:nth-child(3) {
+    background-color: var(--c-green);
+}
+
+nav li:nth-child(4) {
+    background-color: var(--c-yellow);
+}
+
+ul li:hover {
+    border-color: var(--c-text);
+}
+
 .gallery {
-    padding: .5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -101,24 +132,15 @@ ul li {
     object-fit: cover;
 }
 
-nav li:nth-child(1) {
-    background-color: var(--c-teal);
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-text);
 }
 
-nav li:nth-child(2) {
-    background-color: var(--c-orange);
-}
-
-nav li:nth-child(3) {
-    background-color: var(--c-green);
-}
-
-nav li:nth-child(4) {
-    background-color: var(--c-yellow);
-}
-
-ul li:hover {
-    border-color: var(--c-text);
+footer img {
+    width: 30px;
 }
 
 
