@@ -56,7 +56,6 @@ ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    color: #1A1313;
     align-items: center;
     margin: 0;
     padding: 0 0.5rem 1rem 0.5rem;
@@ -71,8 +70,13 @@ ul li {
     font-family: var(--ff-Header);
     font-weight: 800;
     text-align: center;
-
 }
+
+li a {
+    text-decoration: none;
+    color: #1A1313;
+}
+
 
 nav li:nth-child(1) {
     background-color: var(--c-teal);
@@ -148,6 +152,15 @@ footer {
 
 footer img {
     width: 30px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
 }
 
 
